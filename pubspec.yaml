@@ -1,0 +1,27 @@
+name: getrandom
+description: Gets the new random number for android and milliseconds for current time in iOS.
+version: 0.0.1
+author:
+homepage:
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+  flutter: ">=1.20.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+
+  plugin:
+    platforms:
+      android:
+        package: com.example.getrandom
+        pluginClass: GetrandomPlugin
+      ios:
+        pluginClass: GetrandomPlugin
